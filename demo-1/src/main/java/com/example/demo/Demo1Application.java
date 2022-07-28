@@ -17,8 +17,9 @@ public class Demo1Application {
 		DoaImpl dao=context.getBean(DoaImpl.class);
 		List<String> emp=dao.get1();
 		emp.stream().forEach(System.out::println);
-		int emp1=dao.insert();
-		System.out.println(emp1);
+		//List<Employee> list=dao.get();
+		int i=dao.insert();
+		System.out.println(i);
 	}	
 
 }
